@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "fenrir",
+  "name": "Fenrir",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["trapper", "crowd-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y8S2",
+  "ability": {
+    "id": "f-natt-dread-mine",
+    "name": { "en": "F-NATT Dread Mine" }
+  },
+  "loadout": {
+    "primary": ["mp7", "sasg-12"],
+    "secondary": ["5-7-usg"],
+    "gadgets": ["bulletproof-camera", "observation-blocker"]
+  },
+  "legacyId": "d34"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "denari",
+  "name": "Denari",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "crowd-control"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y10S3",
+  "ability": {
+    "id": "t-r-i-p-connector",
+    "name": { "en": "T.R.I.P. Connector" }
+  },
+  "loadout": {
+    "primary": ["scorpion-evo-3-a1", "fmg-9"],
+    "secondary": ["p226-mk-25", "glaive-12"],
+    "gadgets": ["observation-blocker", "deployable-shield"]
+  },
+  "legacyId": "d37"
+}

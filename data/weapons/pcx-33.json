@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "pcx-33",
+  "name": "PCX-33",
+  "slot": "primary",
+  "class": "assault-rifle",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

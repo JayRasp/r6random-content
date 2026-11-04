@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Weapon",
+  "description": "One weapon: data/weapons/<id>.json. The icon is icons/weapons/<id>.svg|png|webp. Attachments come from the class defaults in data/attachments/classes.json; list only the differences here.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/name" },
+    "slot": {
+      "description": "primary or secondary. Operators may only list a weapon in the matching loadout slot.",
+      "enum": ["primary", "secondary"]
+    },
+    "class": { "$ref": "common.schema.json#/$defs/weaponClass" },
+    "attachments": {
+      "description": "Per-slot changes to the class defaults.",
+      "type": "object",
+      "properties": {
+        "sight": { "$ref": "#/$defs/override" },
+        "barrel": { "$ref": "#/$defs/override" },
+        "grip": { "$ref": "#/$defs/override" },
+        "underbarrel": { "$ref": "#/$defs/override" }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "aliases": {
+      "description": "Earlier ids of this weapon.",
+      "$ref": "common.schema.json#/$defs/idList",
+      "minItems": 1
+    }
+  },
+  "required": ["id", "name", "slot", "class"],
+  "additionalProperties": false,
+  "$defs": {
+    "override": {
+      "description": "replace: use exactly this list (an empty list means the slot has nothing). remove / add: adjust the class default list. Applied in the order replace, remove, add.",
+      "type": "object",
+      "properties": {
+        "replace": { "$ref": "common.schema.json#/$defs/idList" },
+        "remove": { "$ref": "common.schema.json#/$defs/idList", "minItems": 1 },
+        "add": { "$ref": "common.schema.json#/$defs/idList", "minItems": 1 }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    }
+  }
+}

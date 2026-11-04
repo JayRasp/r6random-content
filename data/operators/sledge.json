@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "sledge",
+  "name": "Sledge",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "anti-gadget"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "the-caber",
+    "name": { "en": "The Caber (Tactical Breaching Hammer)" }
+  },
+  "loadout": {
+    "primary": ["m590a1", "l85a2"],
+    "secondary": ["p226-mk-25", "reaper-mk2"],
+    "gadgets": ["frag-grenade", "stun-grenade", "impact-emp-grenade"]
+  },
+  "legacyId": "a1"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "mira",
+  "name": "Mira",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y2S1",
+  "ability": {
+    "id": "black-mirror",
+    "name": { "en": "Black Mirror" }
+  },
+  "loadout": {
+    "primary": ["vector-45-acp", "ita12l"],
+    "secondary": ["usp40", "ita12s"],
+    "gadgets": ["proximity-alarm", "nitro-cell"]
+  },
+  "legacyId": "d15"
+}

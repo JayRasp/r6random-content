@@ -1,0 +1,62 @@
+# Checks every pull request and every push to main.
+# Branch protection on main requires this check ("validate") to pass
+# before a pull request can be merged.
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # full history and tags: needed to list changed files and compare with the last release
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Validate data, icons and translations
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: npm run validate -- --changed-since "origin/${BASE_REF:-main}"
+
+      - name: Build (dry run)
+        run: npm run build -- --dry-run
+
+      - name: Show changes compared with the last release
+        if: github.event_name == 'pull_request'
+        env:
+          NO_COLOR: '1'
+        run: |
+          base="$(git describe --tags --abbrev=0 --match 'content-*' 2>/dev/null || true)"
+          if [ -z "$base" ]; then
+            echo "No release tag yet; nothing to compare with." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          {
+            echo "### Changes compared with $base"
+            echo '```'
+            node scripts/changelog.mjs --base "$base"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

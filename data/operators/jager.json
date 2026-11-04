@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "jager",
+  "name": "Jäger",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-gadget", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "ads-mk-iv-magpie",
+    "name": { "en": "ADS-MK IV \"Magpie\"" }
+  },
+  "loadout": {
+    "primary": ["m870", "416-c-carbine"],
+    "secondary": ["p12", "p-10c"],
+    "gadgets": ["bulletproof-camera", "observation-blocker"]
+  },
+  "legacyId": "d9"
+}

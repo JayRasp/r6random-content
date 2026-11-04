@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "azami",
+  "name": "Azami",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y7S1",
+  "ability": {
+    "id": "kiba-barrier",
+    "name": { "en": "Kiba Barrier" }
+  },
+  "loadout": {
+    "primary": ["9x19vsn", "acs12"],
+    "secondary": ["d-50"],
+    "gadgets": ["barbed-wire", "impact-grenade"]
+  },
+  "legacyId": "d32"
+}

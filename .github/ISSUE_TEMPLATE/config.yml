@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email the maintainer
+    url: mailto:contact@jojaweb.lu
+    about: For anything private, or if you do not have a GitHub account.
+  - name: Documentation
+    url: https://jojaweb.com/r6random/docs/
+    about: How the content system works and how to contribute.

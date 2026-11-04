@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "thunderbird",
+  "name": "Thunderbird",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y6S2",
+  "ability": {
+    "id": "kona-station",
+    "name": { "en": "Kona Station" }
+  },
+  "loadout": {
+    "primary": ["spear-308", "spas-15"],
+    "secondary": ["bearing-9", "q-929", "ita12s"],
+    "gadgets": ["deployable-shield", "barbed-wire", "bulletproof-camera"]
+  },
+  "legacyId": "d30"
+}

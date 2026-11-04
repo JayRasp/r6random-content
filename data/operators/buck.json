@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "buck",
+  "name": "Buck",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S1",
+  "ability": {
+    "id": "sk-4-12",
+    "name": { "en": "SK 4-12 (Skeleton Key)" }
+  },
+  "loadout": {
+    "primary": ["c8-sfw", "camrs"],
+    "secondary": [],
+    "gadgets": ["frag-grenade", "claymore"]
+  },
+  "legacyId": "a11"
+}

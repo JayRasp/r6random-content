@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Release metadata",
+  "description": "data/meta.json: label and handwritten note for the NEXT release. The maintainer updates it in the release pull request.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "label": {
+      "$ref": "common.schema.json#/$defs/label",
+      "description": "Season label of the next pack, for example \"Y11S3.0\"."
+    },
+    "minApp": {
+      "$ref": "common.schema.json#/$defs/appVersionCode",
+      "description": "Lowest app versionCode that can read the pack. Raise it only when the pack uses something older apps do not understand."
+    },
+    "note": {
+      "$ref": "common.schema.json#/$defs/longText",
+      "description": "Optional maintainer note shown above the automatic change list. English required when present."
+    }
+  },
+  "required": ["label", "minApp"],
+  "additionalProperties": false
+}

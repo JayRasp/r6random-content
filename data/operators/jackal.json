@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "jackal",
+  "name": "Jackal",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y2S1",
+  "ability": {
+    "id": "eyenox-model-iii",
+    "name": { "en": "Eyenox Model III" }
+  },
+  "loadout": {
+    "primary": ["c7e", "pdw9", "ita12l"],
+    "secondary": ["ita12s", "usp40"],
+    "gadgets": ["smoke-grenade", "claymore"]
+  },
+  "legacyId": "a15"
+}

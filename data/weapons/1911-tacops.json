@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "1911-tacops",
+  "name": "1911 TACOPS",
+  "slot": "secondary",
+  "class": "handgun"
+}

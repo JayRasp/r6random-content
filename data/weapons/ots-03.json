@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "ots-03",
+  "name": "OTs-03",
+  "slot": "primary",
+  "class": "marksman-rifle",
+  "attachments": {
+    "sight": {
+      "replace": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "alda-5-56",
+  "name": "ALDA 5.56",
+  "slot": "primary",
+  "class": "lmg",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

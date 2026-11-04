@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "ying",
+  "name": "Ying",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y2S3",
+  "ability": {
+    "id": "candela-device",
+    "name": { "en": "Candela Device" }
+  },
+  "loadout": {
+    "primary": ["t-95-lsw", "six12"],
+    "secondary": ["q-929", "reaper-mk2"],
+    "gadgets": ["hard-breach-charge", "smoke-grenade"]
+  },
+  "legacyId": "a16"
+}

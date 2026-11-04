@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "lion",
+  "name": "Lion",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y3S1",
+  "ability": {
+    "id": "ee-one-d",
+    "name": { "en": "EE-ONE-D" }
+  },
+  "loadout": {
+    "primary": ["v308", "417", "sg-cqb"],
+    "secondary": ["lfp586", "p9"],
+    "gadgets": ["stun-grenade", "claymore", "frag-grenade"]
+  },
+  "legacyId": "a19"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "skopos",
+  "name": "Skopós",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y9S3",
+  "ability": {
+    "id": "v10-pantheon-shells",
+    "name": { "en": "V10 Pantheon Shells" }
+  },
+  "loadout": {
+    "primary": ["pcx-33"],
+    "secondary": ["p229"],
+    "gadgets": ["impact-grenade", "proximity-alarm"]
+  },
+  "legacyId": "d36"
+}

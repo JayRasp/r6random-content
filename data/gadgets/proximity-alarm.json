@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "proximity-alarm",
+  "name": { "en": "Proximity Alarm" },
+  "side": "defense"
+}

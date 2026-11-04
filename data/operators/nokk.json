@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "nokk",
+  "name": "Nokk",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y4S2",
+  "ability": {
+    "id": "hel-presence-reduction",
+    "name": { "en": "Hel Presence Reduction" }
+  },
+  "loadout": {
+    "primary": ["fmg-9", "six12-sd", "pmr90a2"],
+    "secondary": ["5-7-usg", "d-50"],
+    "gadgets": ["frag-grenade", "hard-breach-charge", "impact-emp-grenade"]
+  },
+  "legacyId": "a24"
+}

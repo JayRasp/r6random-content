@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "brava",
+  "name": "Brava",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "anti-gadget"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y8S1",
+  "ability": {
+    "id": "kludge-drone",
+    "name": { "en": "Kludge Drone" }
+  },
+  "loadout": {
+    "primary": ["para-308", "camrs"],
+    "secondary": ["usp40", "super-shorty"],
+    "gadgets": ["smoke-grenade", "claymore"]
+  },
+  "legacyId": "a34"
+}

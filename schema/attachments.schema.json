@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Attachment catalogue",
+  "description": "data/attachments/attachments.json: every attachment that a class default or a weapon override may name.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "attachments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/id" },
+          "slot": { "$ref": "common.schema.json#/$defs/slot" },
+          "name": { "$ref": "common.schema.json#/$defs/text" }
+        },
+        "required": ["id", "slot", "name"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["attachments"],
+  "additionalProperties": false
+}

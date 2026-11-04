@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "ar-15-50",
+  "name": "AR-15.50",
+  "slot": "primary",
+  "class": "marksman-rifle"
+}

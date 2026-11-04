@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "maverick",
+  "name": "Maverick",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y3S3",
+  "ability": {
+    "id": "exothermic-s-suri-torch",
+    "name": { "en": "Exothermic-S \"SURI\" Torch" }
+  },
+  "loadout": {
+    "primary": ["ar-15-50", "m4"],
+    "secondary": ["1911-tacops", "reaper-mk2"],
+    "gadgets": ["frag-grenade", "stun-grenade", "claymore"]
+  },
+  "legacyId": "a21"
+}

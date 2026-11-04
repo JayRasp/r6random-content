@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "commando-9",
+  "name": "Commando 9",
+  "slot": "primary",
+  "class": "assault-rifle",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

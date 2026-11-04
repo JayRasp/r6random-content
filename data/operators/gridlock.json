@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "gridlock",
+  "name": "Gridlock",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["support", "map-control"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y4S1",
+  "ability": {
+    "id": "trax-stingers",
+    "name": { "en": "Trax Stingers" }
+  },
+  "loadout": {
+    "primary": ["f90", "m249-saw"],
+    "secondary": ["super-shorty", "sdp-9mm"],
+    "gadgets": ["smoke-grenade", "frag-grenade", "impact-emp-grenade"]
+  },
+  "legacyId": "a23"
+}

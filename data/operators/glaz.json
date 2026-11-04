@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "glaz",
+  "name": "Glaz",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S0",
+  "ability": {
+    "id": "hds-flip-sight",
+    "name": { "en": "HDS Flip Sight" }
+  },
+  "loadout": {
+    "primary": ["ots-03"],
+    "secondary": ["pmm", "gonne-6", "bearing-9"],
+    "gadgets": ["smoke-grenade", "frag-grenade", "claymore"]
+  },
+  "legacyId": "a7"
+}

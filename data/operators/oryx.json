@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "oryx",
+  "name": "Oryx",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y5S1",
+  "ability": {
+    "id": "remah-dash",
+    "name": { "en": "Remah Dash" }
+  },
+  "loadout": {
+    "primary": ["t-5-smg", "spas-12"],
+    "secondary": ["bailiff-410", "usp40", "reaper-mk2"],
+    "gadgets": ["barbed-wire", "proximity-alarm"]
+  },
+  "legacyId": "d27"
+}

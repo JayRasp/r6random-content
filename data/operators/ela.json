@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "ela",
+  "name": "Ela",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["crowd-control", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y2S3",
+  "ability": {
+    "id": "grzmot-mine",
+    "name": { "en": "Grzmot Mine" }
+  },
+  "loadout": {
+    "primary": ["scorpion-evo-3-a1", "fo-12"],
+    "secondary": ["rg15"],
+    "gadgets": ["barbed-wire", "impact-grenade", "deployable-shield"]
+  },
+  "legacyId": "d17"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Roles",
+  "description": "data/roles.json: the localized names of the Ubisoft roles used by the operator filter.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/role" },
+          "name": { "$ref": "common.schema.json#/$defs/text" }
+        },
+        "required": ["id", "name"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["roles"],
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "castle",
+  "name": "Castle",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "utp1-universal-tactical-panel",
+    "name": { "en": "UTP1-Universal Tactical Panel" }
+  },
+  "loadout": {
+    "primary": ["ump45", "m1014"],
+    "secondary": ["5-7-usg", "super-shorty", "m45-meusoc"],
+    "gadgets": ["bulletproof-camera", "proximity-alarm"]
+  },
+  "legacyId": "d3"
+}

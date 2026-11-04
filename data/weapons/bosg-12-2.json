@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "bosg-12-2",
+  "name": "BOSG.12.2",
+  "slot": "primary",
+  "class": "shotgun",
+  "attachments": {
+    "sight": {
+      "add": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

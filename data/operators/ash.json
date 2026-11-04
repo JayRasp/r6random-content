@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "ash",
+  "name": "Ash",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S0",
+  "ability": {
+    "id": "m120-crem",
+    "name": { "en": "M120 CREM (Breaching Round)" }
+  },
+  "loadout": {
+    "primary": ["g36c", "r4-c"],
+    "secondary": ["5-7-usg", "m45-meusoc"],
+    "gadgets": ["breach-charge", "claymore"]
+  },
+  "legacyId": "a3"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "bailiff-410",
+  "name": "Bailiff 410",
+  "slot": "secondary",
+  "class": "shotgun",
+  "attachments": {
+    "sight": {
+      "replace": []
+    },
+    "barrel": {
+      "replace": []
+    }
+  }
+}

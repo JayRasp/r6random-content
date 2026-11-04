@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "552-commando",
+  "name": "552 Commando",
+  "slot": "primary",
+  "class": "assault-rifle"
+}

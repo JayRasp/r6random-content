@@ -1,0 +1,54 @@
+name: Wrong loadout
+description: An operator has a weapon, gadget or attachment that does not match the game.
+title: "Wrong loadout: "
+labels: ["loadout", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking the data. One operator per issue keeps things simple.
+        If you know the fix, you can also send a pull request directly; see CONTRIBUTING.md.
+  - type: input
+    id: operator
+    attributes:
+      label: Operator
+      description: The operator's name as shown in the game.
+      placeholder: Buck
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+      description: What the app shows now.
+      placeholder: The app never rolls a secondary weapon for Buck.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should be
+      description: The correct weapons, gadgets or attachments.
+      placeholder: "Secondary: Mk1 9mm. Gadgets: Claymore, Stun Grenade."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link that shows the current loadout (Ubisoft operator page, patch notes, Liquipedia).
+      placeholder: https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/buck
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Filled in automatically when you report from the app (Settings → Report a problem).
+      placeholder: 2.0.0 (30)
+  - type: input
+    id: content-version
+    attributes:
+      label: Content version
+      description: Filled in automatically when you report from the app.
+      placeholder: 2026.09.0 (Y11S3.0)

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "zero",
+  "name": "Zero",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "intel"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y5S3",
+  "ability": {
+    "id": "argus-launcher",
+    "name": { "en": "Argus Launcher" }
+  },
+  "loadout": {
+    "primary": ["sc3000k", "mp7"],
+    "secondary": ["5-7-usg", "gonne-6"],
+    "gadgets": ["hard-breach-charge", "claymore"]
+  },
+  "legacyId": "a29"
+}

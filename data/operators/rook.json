@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "rook",
+  "name": "Rook",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["support"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "r1n-rhino-armor",
+    "name": { "en": "R1N \"Rhino\" Armor" }
+  },
+  "loadout": {
+    "primary": ["sg-cqb", "mp5", "p90"],
+    "secondary": ["p9", "lfp586", "reaper-mk2"],
+    "gadgets": ["proximity-alarm", "nitro-cell", "impact-grenade"]
+  },
+  "legacyId": "d6"
+}

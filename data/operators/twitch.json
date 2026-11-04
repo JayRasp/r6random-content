@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "twitch",
+  "name": "Twitch",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "intel"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "rsd-model-1",
+    "name": { "en": "RSD Model 1 (Shock Drone)" }
+  },
+  "loadout": {
+    "primary": ["f2", "417", "sg-cqb"],
+    "secondary": ["p9", "lfp586"],
+    "gadgets": ["smoke-grenade", "claymore"]
+  },
+  "legacyId": "a5"
+}

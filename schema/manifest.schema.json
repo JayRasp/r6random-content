@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Manifest",
+  "description": "v1/manifest.json on content.jojaweb.com. Written by scripts/build.mjs and signed by scripts/sign.mjs (Ed25519 signature over the exact bytes, base64 in manifest.json.sig). The app reads this file first.",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "description": "Format version of manifest and pack. The app refuses a manifest whose schema it does not know.",
+      "const": 1
+    },
+    "version": { "$ref": "common.schema.json#/$defs/version" },
+    "label": { "$ref": "common.schema.json#/$defs/label" },
+    "minApp": {
+      "$ref": "common.schema.json#/$defs/appVersionCode",
+      "description": "Lowest app versionCode that can read the pack. Older apps show \"This content needs a newer app version\"."
+    },
+    "published": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pack": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "description": "Relative to the manifest.",
+          "type": "string",
+          "pattern": "^packs/\\d{4}\\.\\d{2}\\.\\d+\\.json$"
+        },
+        "sha256": { "$ref": "common.schema.json#/$defs/sha256" },
+        "bytes": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["url", "sha256", "bytes"],
+      "additionalProperties": false
+    },
+    "images": {
+      "description": "Totals for the download-size estimate. The app only downloads images it does not already have (file names contain a content hash).",
+      "type": "object",
+      "properties": {
+        "bytes": { "type": "integer", "minimum": 0 },
+        "count": { "type": "integer", "minimum": 0 }
+      },
+      "required": ["bytes", "count"],
+      "additionalProperties": false
+    },
+    "changelog": {
+      "description": "Newest first. Kept across releases.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/changelogEntry" },
+      "minItems": 1
+    },
+    "messages": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/message" }
+    }
+  },
+  "required": ["schema", "version", "label", "minApp", "published", "pack", "images", "changelog", "messages"],
+  "additionalProperties": false
+}

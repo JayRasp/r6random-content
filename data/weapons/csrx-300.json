@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "csrx-300",
+  "name": "CSRX 300",
+  "slot": "primary",
+  "class": "marksman-rifle",
+  "attachments": {
+    "sight": {
+      "replace": []
+    },
+    "barrel": {
+      "replace": []
+    },
+    "grip": {
+      "replace": []
+    },
+    "underbarrel": {
+      "replace": []
+    }
+  }
+}

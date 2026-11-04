@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "416-c-carbine",
+  "name": "416-C Carbine",
+  "slot": "primary",
+  "class": "assault-rifle",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

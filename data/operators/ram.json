@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "ram",
+  "name": "Ram",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "breach"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y8S3",
+  "ability": {
+    "id": "bu-gi-auto-breacher",
+    "name": { "en": "BU-GI AUTO BREACHER" }
+  },
+  "loadout": {
+    "primary": ["r4-c", "lmg-e"],
+    "secondary": ["mk1-9mm"],
+    "gadgets": ["smoke-grenade", "stun-grenade"]
+  },
+  "legacyId": "a35"
+}

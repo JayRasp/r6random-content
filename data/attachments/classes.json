@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/classes.schema.json",
+  "classes": {
+    "assault-rifle": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "magnified-a",
+        "magnified-b",
+        "magnified-c",
+        "iron-sight"
+      ],
+      "barrel": ["flash-hider", "compensator", "muzzle-brake", "suppressor", "extended-barrel"],
+      "grip": ["vertical-grip", "angled-grip", "horizontal-grip"],
+      "underbarrel": ["laser"]
+    },
+    "smg": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "magnified-a",
+        "magnified-b",
+        "magnified-c",
+        "iron-sight"
+      ],
+      "barrel": ["flash-hider", "compensator", "muzzle-brake", "suppressor", "extended-barrel"],
+      "grip": ["vertical-grip", "angled-grip", "horizontal-grip"],
+      "underbarrel": ["laser"]
+    },
+    "lmg": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "magnified-a",
+        "magnified-b",
+        "magnified-c",
+        "iron-sight"
+      ],
+      "barrel": ["flash-hider", "compensator", "muzzle-brake", "suppressor", "extended-barrel"],
+      "grip": ["vertical-grip", "angled-grip", "horizontal-grip"],
+      "underbarrel": ["laser"]
+    },
+    "marksman-rifle": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "magnified-a",
+        "magnified-b",
+        "magnified-c",
+        "telescopic-a",
+        "telescopic-b",
+        "iron-sight"
+      ],
+      "barrel": ["flash-hider", "compensator", "muzzle-brake", "suppressor", "extended-barrel"],
+      "grip": ["vertical-grip", "angled-grip", "horizontal-grip"],
+      "underbarrel": ["laser"]
+    },
+    "shotgun": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "iron-sight"
+      ],
+      "barrel": ["suppressor"],
+      "grip": [],
+      "underbarrel": ["laser"]
+    },
+    "shield": {
+      "sight": [],
+      "barrel": [],
+      "grip": [],
+      "underbarrel": []
+    },
+    "handgun": {
+      "sight": [],
+      "barrel": ["muzzle-brake", "suppressor"],
+      "grip": [],
+      "underbarrel": ["laser"]
+    },
+    "machine-pistol": {
+      "sight": [
+        "red-dot-a",
+        "red-dot-b",
+        "red-dot-c",
+        "holo-a",
+        "holo-b",
+        "holo-c",
+        "holo-d",
+        "reflex-a",
+        "reflex-b",
+        "reflex-c",
+        "iron-sight"
+      ],
+      "barrel": ["flash-hider", "compensator", "muzzle-brake", "suppressor", "extended-barrel"],
+      "grip": ["vertical-grip", "horizontal-grip"],
+      "underbarrel": ["laser"]
+    },
+    "hand-cannon": {
+      "sight": [],
+      "barrel": [],
+      "grip": [],
+      "underbarrel": []
+    }
+  }
+}

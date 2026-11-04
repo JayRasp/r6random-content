@@ -1,0 +1,71 @@
+{
+  "$schema": "../schema/roles.schema.json",
+  "roles": [
+    {
+      "id": "anti-entry",
+      "name": {
+        "en": "Anti-Entry",
+        "de": "Anti-Zugang",
+        "fr": "Anti-intrusion",
+        "lb": "Anti-Agang"
+      }
+    },
+    {
+      "id": "anti-gadget",
+      "name": {
+        "en": "Anti-Gadget",
+        "de": "Anti-Gerät",
+        "fr": "Anti-gadget",
+        "lb": "Anti-Gadget"
+      }
+    },
+    {
+      "id": "breach",
+      "name": { "en": "Breach", "de": "Durchbruch", "fr": "Brèche", "lb": "Duerchbroch" }
+    },
+    {
+      "id": "crowd-control",
+      "name": {
+        "en": "Crowd Control",
+        "de": "Massenkontrolle",
+        "fr": "Contrôle des foules",
+        "lb": "Massekontroll"
+      }
+    },
+    {
+      "id": "front-line",
+      "name": {
+        "en": "Front Line",
+        "de": "Frontlinie",
+        "fr": "Première ligne",
+        "lb": "Frontlinn"
+      }
+    },
+    {
+      "id": "intel",
+      "name": { "en": "Intel", "de": "Infos", "fr": "Renseignements", "lb": "Informatiounen" }
+    },
+    {
+      "id": "map-control",
+      "name": {
+        "en": "Map Control",
+        "de": "Kartenkontrolle",
+        "fr": "Contrôle de la carte",
+        "lb": "Kaartekontroll"
+      }
+    },
+    {
+      "id": "support",
+      "name": {
+        "en": "Support",
+        "de": "Unterstützung",
+        "fr": "Assistance",
+        "lb": "Ënnerstëtzung"
+      }
+    },
+    {
+      "id": "trapper",
+      "name": { "en": "Trapper", "de": "Fallensteller", "fr": "Piégeur", "lb": "Fallesteller" }
+    }
+  ]
+}

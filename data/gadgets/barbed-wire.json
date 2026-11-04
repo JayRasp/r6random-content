@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "barbed-wire",
+  "name": { "en": "Barbed Wire" },
+  "side": "defense"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "scorpion-evo-3-a1",
+  "name": "Scorpion EVO 3 A1",
+  "slot": "primary",
+  "class": "smg",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

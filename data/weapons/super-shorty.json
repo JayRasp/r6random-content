@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "super-shorty",
+  "name": "Super Shorty",
+  "slot": "secondary",
+  "class": "shotgun",
+  "attachments": {
+    "sight": {
+      "replace": []
+    },
+    "barrel": {
+      "replace": []
+    }
+  }
+}

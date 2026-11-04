@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "keratos-357",
+  "name": "Keratos .357",
+  "slot": "secondary",
+  "class": "handgun",
+  "attachments": {
+    "barrel": {
+      "replace": []
+    }
+  }
+}

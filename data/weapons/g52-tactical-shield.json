@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "g52-tactical-shield",
+  "name": "G52-Tactical Shield",
+  "slot": "primary",
+  "class": "shield"
+}

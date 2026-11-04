@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gadget",
+  "description": "One general gadget (frag grenade, barbed wire …): data/gadgets/<id>.json. The icon is icons/gadgets/<id>.svg|png|webp. Unique operator abilities are not gadgets; they live in the operator file.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/text" },
+    "side": {
+      "$ref": "common.schema.json#/$defs/side",
+      "description": "Only operators of this side may list the gadget."
+    },
+    "aliases": {
+      "$ref": "common.schema.json#/$defs/idList",
+      "minItems": 1
+    }
+  },
+  "required": ["id", "name", "side"],
+  "additionalProperties": false
+}

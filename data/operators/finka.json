@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "finka",
+  "name": "Finka",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y3S1",
+  "ability": {
+    "id": "nanobot-shots",
+    "name": { "en": "Nanobot Shots (Adrenal Surge)" }
+  },
+  "loadout": {
+    "primary": ["spear-308", "6p41", "sasg-12"],
+    "secondary": ["pmm", "gsh-18"],
+    "gadgets": ["smoke-grenade", "frag-grenade", "stun-grenade"]
+  },
+  "legacyId": "a20"
+}

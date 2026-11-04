@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "lfp586",
+  "name": "LFP586",
+  "slot": "secondary",
+  "class": "handgun",
+  "attachments": {
+    "barrel": {
+      "replace": []
+    }
+  }
+}

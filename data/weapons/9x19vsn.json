@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "9x19vsn",
+  "name": "9x19VSN",
+  "slot": "primary",
+  "class": "smg"
+}

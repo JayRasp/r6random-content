@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "lesion",
+  "name": "Lesion",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y2S3",
+  "ability": {
+    "id": "gu-mine",
+    "name": { "en": "Gu Mine" }
+  },
+  "loadout": {
+    "primary": ["six12-sd", "t-5-smg"],
+    "secondary": ["q-929"],
+    "gadgets": ["observation-blocker", "bulletproof-camera"]
+  },
+  "legacyId": "d16"
+}

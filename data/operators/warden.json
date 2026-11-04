@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "warden",
+  "name": "Warden",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-gadget", "intel"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y4S2",
+  "ability": {
+    "id": "glance-smart-glasses",
+    "name": { "en": "Glance Smart Glasses" }
+  },
+  "loadout": {
+    "primary": ["m590a1", "mpx"],
+    "secondary": ["p-10c", "smg-12"],
+    "gadgets": ["deployable-shield", "observation-blocker", "nitro-cell"]
+  },
+  "legacyId": "d24"
+}

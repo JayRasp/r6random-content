@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Attachment defaults per weapon class",
+  "description": "data/attachments/classes.json: the attachments a weapon of each class gets unless its own file says otherwise. Every class needs all four slots; an empty list means the slot has nothing.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "classes": {
+      "type": "object",
+      "propertyNames": { "$ref": "common.schema.json#/$defs/weaponClass" },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "sight": { "$ref": "common.schema.json#/$defs/idList" },
+          "barrel": { "$ref": "common.schema.json#/$defs/idList" },
+          "grip": { "$ref": "common.schema.json#/$defs/idList" },
+          "underbarrel": { "$ref": "common.schema.json#/$defs/idList" }
+        },
+        "required": ["sight", "barrel", "grip", "underbarrel"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["classes"],
+  "additionalProperties": false
+}

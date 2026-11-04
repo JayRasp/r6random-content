@@ -1,0 +1,25 @@
+{
+  "$schema": "../schema/messages.schema.json",
+  "messages": [
+    {
+      "id": "content-updates-intro",
+      "severity": "info",
+      "minApp": 30,
+      "maxApp": null,
+      "from": null,
+      "until": null,
+      "title": {
+        "en": "Content updates",
+        "de": "Inhalts-Updates",
+        "fr": "Mises à jour du contenu",
+        "lb": "Aktualiséierunge vum Inhalt"
+      },
+      "body": {
+        "en": "New operators and loadout fixes now arrive without an app update. You can change how updates are installed, or turn them off, in the settings.",
+        "de": "Neue Operatoren und Loadout-Korrekturen kommen jetzt ohne App-Update. In den Einstellungen kannst du festlegen, wie Updates installiert werden, oder sie ausschalten.",
+        "fr": "Les nouveaux opérateurs et les corrections d'équipement arrivent désormais sans mise à jour de l'application. Dans les paramètres, vous pouvez choisir comment les installer ou les désactiver.",
+        "lb": "Nei Operatoren a Korrekture vun der Ausrüstung kommen elo ouni Aktualiséierung vun der App. An den Astellunge kënnt Dir festleeën, wéi Aktualiséierungen installéiert ginn, oder se ausschalten."
+      }
+    }
+  ]
+}

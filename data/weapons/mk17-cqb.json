@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "mk17-cqb",
+  "name": "Mk17 CQB",
+  "slot": "primary",
+  "class": "assault-rifle"
+}

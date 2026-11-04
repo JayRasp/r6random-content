@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "tubarao",
+  "name": "Tubarão",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["crowd-control", "anti-gadget"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y8S4",
+  "ability": {
+    "id": "zoto-canister",
+    "name": { "en": "Zoto Canister" }
+  },
+  "loadout": {
+    "primary": ["mpx", "ar-15-50"],
+    "secondary": ["p226-mk-25"],
+    "gadgets": ["nitro-cell", "proximity-alarm"]
+  },
+  "legacyId": "d35"
+}

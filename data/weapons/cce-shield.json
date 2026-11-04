@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "cce-shield",
+  "name": "CCE Shield",
+  "slot": "primary",
+  "class": "shield"
+}
