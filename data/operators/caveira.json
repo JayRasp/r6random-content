@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "caveira",
+  "name": "Caveira",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "crowd-control"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S3",
+  "ability": {
+    "id": "silent-step-interrogation",
+    "name": { "en": "Silent Step & Interrogation" }
+  },
+  "loadout": {
+    "primary": ["m12", "spas-15"],
+    "secondary": ["luison"],
+    "gadgets": ["impact-grenade", "observation-blocker", "proximity-alarm"]
+  },
+  "legacyId": "d13"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "solis",
+  "name": "Solis",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["support", "intel"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y7S4",
+  "ability": {
+    "id": "spec-io-electro-sensor",
+    "name": { "en": "SPEC-IO ELECTRO-SENSOR" }
+  },
+  "loadout": {
+    "primary": ["p90", "ita12l"],
+    "secondary": ["smg-11"],
+    "gadgets": ["impact-grenade", "proximity-alarm"]
+  },
+  "legacyId": "d33"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "striker",
+  "name": "Striker",
+  "side": "attack",
+  "type": "gadgetKit",
+  "roles": ["support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y9S2",
+  "ability": {
+    "id": "striker-gadget-kit",
+    "name": { "en": "Gadget Kit" }
+  },
+  "loadout": {
+    "primary": ["m4", "m249", "sr-25"],
+    "secondary": ["5-7-usg", "ita12s"],
+    "gadgets": [
+      "breach-charge",
+      "claymore",
+      "impact-emp-grenade",
+      "frag-grenade",
+      "hard-breach-charge",
+      "smoke-grenade",
+      "stun-grenade"
+    ],
+    "gadgetPicks": 2
+  },
+  "legacyId": "a0"
+}

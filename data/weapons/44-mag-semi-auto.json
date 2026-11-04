@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "44-mag-semi-auto",
+  "name": ".44 Mag Semi-Auto",
+  "slot": "secondary",
+  "class": "handgun"
+}

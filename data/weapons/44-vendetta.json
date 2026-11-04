@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "44-vendetta",
+  "name": ".44 VENDETTA",
+  "slot": "secondary",
+  "class": "handgun",
+  "attachments": {
+    "barrel": {
+      "replace": []
+    }
+  }
+}

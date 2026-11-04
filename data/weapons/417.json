@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "417",
+  "name": "417",
+  "slot": "primary",
+  "class": "marksman-rifle",
+  "attachments": {
+    "grip": {
+      "remove": ["angled-grip"]
+    }
+  }
+}

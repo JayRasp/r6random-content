@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operator",
+  "description": "One operator: data/operators/<id>.json. Icons are found by convention: icons/operators/<id>.svg|png|webp and icons/abilities/<ability.id>.svg|png|webp.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id",
+      "description": "Permanent id, equal to the file name. Never change it once published; add the old id to aliases if it really has to change."
+    },
+    "legacyId": {
+      "description": "Id used by app versions before 2.0.0 (a0 … a38, d0 … d37). Only for operators that existed then; never add one to a new operator.",
+      "type": "string",
+      "pattern": "^[ad]\\d+$"
+    },
+    "name": { "$ref": "common.schema.json#/$defs/name" },
+    "side": { "$ref": "common.schema.json#/$defs/side" },
+    "type": {
+      "description": "standard: one gadget per round. gadgetKit: the player picks gadgetPicks gadgets from a larger pool (Striker, Sentry).",
+      "enum": ["standard", "gadgetKit"],
+      "default": "standard"
+    },
+    "roles": {
+      "description": "Ubisoft roles as shown in the game's operator menu, most important first.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/role" },
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "armor": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "speed": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "released": {
+      "$ref": "common.schema.json#/$defs/season",
+      "description": "Season in which the operator arrived, for example \"Y11S3\". Launch operators use \"Y1S0\"."
+    },
+    "ability": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id",
+          "description": "Unique across all operators. The icon is icons/abilities/<id>.svg|png|webp."
+        },
+        "name": { "$ref": "common.schema.json#/$defs/text" }
+      },
+      "required": ["id", "name"],
+      "additionalProperties": false
+    },
+    "loadout": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "description": "Weapon ids with slot \"primary\".",
+          "$ref": "common.schema.json#/$defs/idList",
+          "minItems": 1
+        },
+        "secondary": {
+          "description": "Weapon ids with slot \"secondary\".",
+          "$ref": "common.schema.json#/$defs/idList"
+        },
+        "gadgets": {
+          "description": "General gadget ids (data/gadgets) of the operator's side.",
+          "$ref": "common.schema.json#/$defs/idList",
+          "minItems": 1
+        },
+        "gadgetPicks": {
+          "description": "How many gadgets the operator takes into a round. 1 for standard operators, 2 for gadget-kit operators.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3,
+          "default": 1
+        }
+      },
+      "required": ["primary", "secondary", "gadgets"],
+      "additionalProperties": false
+    },
+    "aliases": {
+      "description": "Earlier ids of this operator. Saved settings and presets that use an alias are mapped to the current id.",
+      "$ref": "common.schema.json#/$defs/idList",
+      "minItems": 1
+    }
+  },
+  "required": ["id", "name", "side", "roles", "armor", "speed", "released", "ability", "loadout"],
+  "additionalProperties": false
+}

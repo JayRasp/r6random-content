@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "sentry",
+  "name": "Sentry",
+  "side": "defense",
+  "type": "gadgetKit",
+  "roles": ["support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y9S2",
+  "ability": {
+    "id": "sentry-gadget-kit",
+    "name": { "en": "Gadget Kit" }
+  },
+  "loadout": {
+    "primary": ["commando-9", "m870", "tcsg12"],
+    "secondary": ["c75-auto", "super-shorty"],
+    "gadgets": [
+      "nitro-cell",
+      "impact-grenade",
+      "proximity-alarm",
+      "bulletproof-camera",
+      "barbed-wire",
+      "deployable-shield",
+      "observation-blocker"
+    ],
+    "gadgetPicks": 2
+  },
+  "legacyId": "d0"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "luison",
+  "name": "Luison",
+  "slot": "secondary",
+  "class": "handgun",
+  "attachments": {
+    "barrel": {
+      "replace": []
+    }
+  }
+}

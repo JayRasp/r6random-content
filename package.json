@@ -1,0 +1,34 @@
+{
+  "name": "r6random-content",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Operator, weapon and gadget data for the R6 Siege Randomizer app, published to content.jojaweb.com.",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "https://jojaweb.com/r6random/docs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayRasp/r6random-content.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JayRasp/r6random-content/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "new": "node scripts/new.mjs",
+    "build": "node scripts/build.mjs",
+    "changelog": "node scripts/changelog.mjs",
+    "preview": "node scripts/preview.mjs",
+    "keygen": "node scripts/keygen.mjs",
+    "sign": "node scripts/sign.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "sharp": "^0.35.5",
+    "svgo": "^4.1.0"
+  }
+}

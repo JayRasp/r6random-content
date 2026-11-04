@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "grim",
+  "name": "Grim",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["map-control", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y7S3",
+  "ability": {
+    "id": "kawan-hive-launcher",
+    "name": { "en": "Kawan Hive Launcher" }
+  },
+  "loadout": {
+    "primary": ["552-commando", "sg-cqb"],
+    "secondary": ["p229", "bailiff-410"],
+    "gadgets": ["impact-emp-grenade", "hard-breach-charge", "claymore"]
+  },
+  "legacyId": "a33"
+}

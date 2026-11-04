@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "smoke",
+  "name": "Smoke",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "compound-z8",
+    "name": { "en": "Compound Z8 (Remote Gas Grenade)" }
+  },
+  "loadout": {
+    "primary": ["fmg-9", "m590a1"],
+    "secondary": ["p226-mk-25", "smg-11"],
+    "gadgets": ["barbed-wire", "proximity-alarm"]
+  },
+  "legacyId": "d1"
+}

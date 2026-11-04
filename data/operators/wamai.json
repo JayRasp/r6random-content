@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "wamai",
+  "name": "Wamai",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-gadget", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y4S4",
+  "ability": {
+    "id": "mag-net",
+    "name": { "en": "Mag-NET" }
+  },
+  "loadout": {
+    "primary": ["aug-a2", "mp5k"],
+    "secondary": ["keratos-357", "p12", "super-shorty"],
+    "gadgets": ["impact-grenade", "proximity-alarm"]
+  },
+  "legacyId": "d26"
+}

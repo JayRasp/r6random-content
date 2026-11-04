@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "blackbeard",
+  "name": "Blackbeard",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "front-line"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S2",
+  "ability": {
+    "id": "tars-mk-0-rifle-shield",
+    "name": { "en": "TARS MK 0 Rifle Shield" }
+  },
+  "loadout": {
+    "primary": ["mk17-cqb", "sr-25"],
+    "secondary": ["d-50"],
+    "gadgets": ["claymore", "stun-grenade", "frag-grenade"]
+  },
+  "legacyId": "a12"
+}

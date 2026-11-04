@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "thermite",
+  "name": "Thermite",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "brimstone-bc-3",
+    "name": { "en": "Brimstone BC-3 (Exo-Thermic Charge)" }
+  },
+  "loadout": {
+    "primary": ["m1014", "556xi"],
+    "secondary": ["m45-meusoc", "5-7-usg", "ita12s"],
+    "gadgets": ["smoke-grenade", "stun-grenade"]
+  },
+  "legacyId": "a4"
+}

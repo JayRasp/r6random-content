@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "fuze",
+  "name": "Fuze",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "apm-6-matryoshka-cluster-charge",
+    "name": { "en": "APM-6 \"Matryoshka\" Cluster Charge" }
+  },
+  "loadout": {
+    "primary": ["ballistic-shield", "ak-12", "6p41"],
+    "secondary": ["pmm", "gsh-18"],
+    "gadgets": ["breach-charge", "hard-breach-charge", "smoke-grenade"]
+  },
+  "legacyId": "a8"
+}

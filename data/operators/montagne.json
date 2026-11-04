@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "montagne",
+  "name": "Montagne",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "le-roc-extendable-shield",
+    "name": { "en": "\"Le Roc\" Extendable Shield" }
+  },
+  "loadout": {
+    "primary": ["le-roc-shield"],
+    "secondary": ["p9", "lfp586"],
+    "gadgets": ["hard-breach-charge", "smoke-grenade", "impact-emp-grenade"]
+  },
+  "legacyId": "a6"
+}

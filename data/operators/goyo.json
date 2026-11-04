@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "goyo",
+  "name": "Goyo",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y4S3",
+  "ability": {
+    "id": "volcan-shield",
+    "name": { "en": "Volcán Shield" }
+  },
+  "loadout": {
+    "primary": ["vector-45-acp", "tcsg12"],
+    "secondary": ["p229"],
+    "gadgets": ["proximity-alarm", "impact-grenade", "bulletproof-camera"]
+  },
+  "legacyId": "d25"
+}

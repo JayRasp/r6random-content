@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "reaper-mk2",
+  "name": "REAPER MK2",
+  "slot": "secondary",
+  "class": "machine-pistol"
+}

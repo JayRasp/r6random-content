@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "ace",
+  "name": "Ace",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "anti-gadget"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y5S2",
+  "ability": {
+    "id": "s-e-l-m-a-aqua-breacher",
+    "name": { "en": "S.E.L.M.A. Aqua Breacher" }
+  },
+  "loadout": {
+    "primary": ["ak-12", "m1014"],
+    "secondary": ["p9"],
+    "gadgets": ["stun-grenade", "claymore"]
+  },
+  "legacyId": "a28"
+}

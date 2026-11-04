@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "sens",
+  "name": "Sens",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["support", "map-control"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y7S2",
+  "ability": {
+    "id": "r-o-u-projector-system",
+    "name": { "en": "R.O.U. Projector System" }
+  },
+  "loadout": {
+    "primary": ["pof9", "417"],
+    "secondary": ["sdp-9mm"],
+    "gadgets": ["hard-breach-charge", "frag-grenade", "claymore"]
+  },
+  "legacyId": "a32"
+}

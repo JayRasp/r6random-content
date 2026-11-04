@@ -1,0 +1,149 @@
+# Publishes a content pack to https://content.jojaweb.com when the maintainer
+# pushes a tag named content-YYYY.MM.patch (for example content-2026.09.0).
+#
+# The build job runs in the "production" environment: it waits until the
+# maintainer approves the run and only then receives CONTENT_SIGNING_KEY.
+# The deploy job hands the signed build to GitHub Pages.
+name: publish
+
+on:
+  push:
+    tags: ['content-*']
+
+permissions: {}
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+env:
+  CONTENT_URL: https://content.jojaweb.com/v1
+
+jobs:
+  build:
+    name: build and sign
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+    permissions:
+      contents: read
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+      label: ${{ steps.release.outputs.label }}
+    steps:
+      - name: Check out the tagged commit
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Read version and label
+        id: release
+        run: |
+          version="${GITHUB_REF_NAME#content-}"
+          if ! [[ "$version" =~ ^[0-9]{4}\.[0-9]{2}\.[0-9]+$ ]]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match content-YYYY.MM.patch (for example content-2026.09.0)."
+            exit 1
+          fi
+          if ! git merge-base --is-ancestor "$GITHUB_SHA" origin/main; then
+            echo "::error::Tag $GITHUB_REF_NAME points to a commit that is not on main. Merge the pull request first, then tag main."
+            exit 1
+          fi
+          label="$(node -p "require('./data/meta.json').label")"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "label=$label" >> "$GITHUB_OUTPUT"
+          echo "Publishing $label ($version)"
+
+      - name: Download the live release
+        id: live
+        run: |
+          mkdir -p dist-prev/v1/packs
+          code="$(curl -sS --retry 3 -o dist-prev/v1/manifest.json -w '%{http_code}' "$CONTENT_URL/manifest.json?run=$GITHUB_RUN_ID" || true)"
+          case "$code" in
+            200)
+              curl -fsSL --retry 3 "$CONTENT_URL/manifest.json.sig?run=$GITHUB_RUN_ID" -o dist-prev/v1/manifest.json.sig
+              npm run --silent sign -- --verify dist-prev/v1/manifest.json
+              pack="$(node -p "require('./dist-prev/v1/manifest.json').pack.url")"
+              curl -fsSL --retry 3 "$CONTENT_URL/$pack" -o "dist-prev/v1/$pack"
+              echo "previous=dist-prev/v1/manifest.json" >> "$GITHUB_OUTPUT"
+              ;;
+            404)
+              echo "::notice::No live manifest yet: publishing the first release."
+              ;;
+            *)
+              echo "::error::Could not download $CONTENT_URL/manifest.json (HTTP $code). Without it the changelog history would be lost, so the run stops. Re-run the job."
+              exit 1
+              ;;
+          esac
+
+      - name: Build
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+          LABEL: ${{ steps.release.outputs.label }}
+          PREVIOUS: ${{ steps.live.outputs.previous }}
+        run: npm run build -- --version "$VERSION" --label "$LABEL" ${PREVIOUS:+--previous "$PREVIOUS"}
+
+      - name: Sign
+        env:
+          CONTENT_SIGNING_KEY: ${{ secrets.CONTENT_SIGNING_KEY }}
+        run: |
+          npm run sign -- dist/v1/manifest.json
+          npm run sign -- --verify dist/v1/manifest.json
+
+      - name: Summary
+        run: |
+          node -e '
+            const m = require("./dist/v1/manifest.json");
+            const lines = [
+              `### ${m.label} (${m.version})`,
+              `Pack ${m.pack.url}: ${Math.round(m.pack.bytes / 1024)} KB, sha256 \`${m.pack.sha256}\``,
+              `Images: ${m.images.count} files, ${Math.round(m.images.bytes / 1024)} KB`,
+              `Changes: ${m.changelog[0].changes.length}, messages: ${m.messages.length}`,
+            ];
+            console.log(lines.join("\n\n"));
+          ' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    name: deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://content.jojaweb.com/v1/manifest.json
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: Check the live manifest
+        env:
+          VERSION: ${{ needs.build.outputs.version }}
+        run: |
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            live="$(curl -fsSL "$CONTENT_URL/manifest.json?check=$GITHUB_RUN_ID-$attempt" | grep -o '"version": *"[^"]*"' | head -1 | grep -o '[0-9.]*[0-9]' || true)"
+            if [ "$live" = "$VERSION" ]; then
+              echo "Live: $VERSION"
+              exit 0
+            fi
+            echo "Live version is ${live:-unknown}; waiting for $VERSION ($attempt/10)"
+            sleep 30
+          done
+          echo "::warning::The live manifest does not show $VERSION yet. GitHub Pages can take a few minutes; check again with: npm run sign -- --verify $CONTENT_URL/manifest.json"

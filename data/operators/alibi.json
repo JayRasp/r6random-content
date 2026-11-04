@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "alibi",
+  "name": "Alibi",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "trapper"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y3S2",
+  "ability": {
+    "id": "prisma-hologram",
+    "name": { "en": "Prisma/Hologram" }
+  },
+  "loadout": {
+    "primary": ["mx4-storm", "acs12"],
+    "secondary": ["keratos-357", "bailiff-410"],
+    "gadgets": ["observation-blocker", "proximity-alarm"]
+  },
+  "legacyId": "d20"
+}

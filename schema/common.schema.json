@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shared definitions",
+  "description": "Building blocks referenced by the other schemas in this folder.",
+  "$defs": {
+    "id": {
+      "description": "Lowercase letters a-z, digits and single hyphens, for example \"alda-5-56\". Ids are permanent: they are stored in players' settings and presets.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "idList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/id" },
+      "uniqueItems": true
+    },
+    "name": {
+      "description": "Display name exactly as the game writes it.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "text": {
+      "description": "Localized text. English (en) is required; German (de), French (fr) and Luxembourgish (lb) are optional and fall back to English in the app.",
+      "type": "object",
+      "properties": {
+        "en": { "$ref": "#/$defs/nonEmpty" },
+        "de": { "$ref": "#/$defs/nonEmpty" },
+        "fr": { "$ref": "#/$defs/nonEmpty" },
+        "lb": { "$ref": "#/$defs/nonEmpty" }
+      },
+      "required": ["en"],
+      "additionalProperties": false
+    },
+    "longText": {
+      "description": "Localized text that may span several lines. English (en) is required.",
+      "type": "object",
+      "properties": {
+        "en": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "de": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "fr": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "lb": { "type": "string", "minLength": 1, "maxLength": 600 }
+      },
+      "required": ["en"],
+      "additionalProperties": false
+    },
+    "side": {
+      "enum": ["attack", "defense"]
+    },
+    "slot": {
+      "description": "Attachment slot.",
+      "enum": ["sight", "barrel", "grip", "underbarrel"]
+    },
+    "weaponClass": {
+      "enum": [
+        "assault-rifle", "smg", "lmg", "marksman-rifle", "shotgun", "slug-shotgun",
+        "shield", "handgun", "machine-pistol", "hand-cannon"
+      ]
+    },
+    "role": {
+      "description": "Ubisoft role id.",
+      "enum": [
+        "anti-entry", "anti-gadget", "breach", "crowd-control", "front-line",
+        "intel", "map-control", "support", "trapper"
+      ]
+    },
+    "version": {
+      "description": "Content version YYYY.MM.patch, for example \"2026.09.0\". Sortable; used for comparisons.",
+      "type": "string",
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d+$"
+    },
+    "label": {
+      "description": "Season label shown to players, for example \"Y11S3.0\" or \"Y11S3.2\".",
+      "type": "string",
+      "pattern": "^Y\\d+S\\d+(\\.\\d+)?$"
+    },
+    "season": {
+      "description": "Season in which something was released, for example \"Y11S3\".",
+      "type": "string",
+      "pattern": "^Y\\d+S\\d+$"
+    },
+    "appVersionCode": {
+      "description": "Android versionCode of the app (2.0.0 is 30).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "imagePath": {
+      "description": "Path of a normalised 256 px WebP image, relative to the manifest. The 32 hex characters before .webp are the first 128 bits of the file's SHA-256; the app recomputes them and rejects a file that does not match.",
+      "type": "string",
+      "pattern": "^img/(operators|abilities|weapons|gadgets)/[a-z0-9]+(-[a-z0-9]+)*\\.[a-f0-9]{32}\\.webp$"
+    },
+    "message": {
+      "description": "A message shown to players once per id.",
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "severity": {
+          "description": "info: small banner. warning: banner that stays until dismissed. important: dialog that needs \"Got it\".",
+          "enum": ["info", "warning", "important"]
+        },
+        "minApp": {
+          "description": "Lowest app versionCode that shows the message. null: no lower limit.",
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "maxApp": {
+          "description": "Highest app versionCode that shows the message. null: no upper limit.",
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "from": {
+          "description": "First day the message is shown (UTC). null: immediately.",
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "until": {
+          "description": "Last day the message is shown (UTC). null: no end.",
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "title": { "$ref": "#/$defs/text" },
+        "body": { "$ref": "#/$defs/longText" }
+      },
+      "required": ["id", "severity", "title", "body"],
+      "additionalProperties": false
+    },
+    "change": {
+      "description": "One automatically detected change.",
+      "type": "object",
+      "properties": {
+        "kind": { "enum": ["added", "removed", "renamed", "loadout", "changed"] },
+        "target": { "enum": ["operator", "weapon", "gadget"] },
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "detail": { "type": "object" }
+      },
+      "required": ["kind", "target", "id"],
+      "additionalProperties": false
+    },
+    "changelogEntry": {
+      "type": "object",
+      "properties": {
+        "version": { "$ref": "#/$defs/version" },
+        "label": { "$ref": "#/$defs/label" },
+        "date": { "type": "string", "format": "date" },
+        "note": { "$ref": "#/$defs/longText" },
+        "changes": { "type": "array", "items": { "$ref": "#/$defs/change" } }
+      },
+      "required": ["version", "label", "date", "changes"],
+      "additionalProperties": false
+    }
+  }
+}

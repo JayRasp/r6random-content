@@ -1,0 +1,135 @@
+{
+  "$schema": "../../schema/attachments.schema.json",
+  "attachments": [
+    {
+      "id": "red-dot-a",
+      "slot": "sight",
+      "name": { "en": "Red Dot A" }
+    },
+    {
+      "id": "red-dot-b",
+      "slot": "sight",
+      "name": { "en": "Red Dot B" }
+    },
+    {
+      "id": "red-dot-c",
+      "slot": "sight",
+      "name": { "en": "Red Dot C" }
+    },
+    {
+      "id": "holo-a",
+      "slot": "sight",
+      "name": { "en": "Holo A" }
+    },
+    {
+      "id": "holo-b",
+      "slot": "sight",
+      "name": { "en": "Holo B" }
+    },
+    {
+      "id": "holo-c",
+      "slot": "sight",
+      "name": { "en": "Holo C" }
+    },
+    {
+      "id": "holo-d",
+      "slot": "sight",
+      "name": { "en": "Holo D" }
+    },
+    {
+      "id": "reflex-a",
+      "slot": "sight",
+      "name": { "en": "Reflex A" }
+    },
+    {
+      "id": "reflex-b",
+      "slot": "sight",
+      "name": { "en": "Reflex B" }
+    },
+    {
+      "id": "reflex-c",
+      "slot": "sight",
+      "name": { "en": "Reflex C" }
+    },
+    {
+      "id": "reflex-d",
+      "slot": "sight",
+      "name": { "en": "Reflex D" }
+    },
+    {
+      "id": "magnified-a",
+      "slot": "sight",
+      "name": { "en": "Magnified A" }
+    },
+    {
+      "id": "magnified-b",
+      "slot": "sight",
+      "name": { "en": "Magnified B" }
+    },
+    {
+      "id": "magnified-c",
+      "slot": "sight",
+      "name": { "en": "Magnified C" }
+    },
+    {
+      "id": "telescopic-a",
+      "slot": "sight",
+      "name": { "en": "Telescopic A" }
+    },
+    {
+      "id": "telescopic-b",
+      "slot": "sight",
+      "name": { "en": "Telescopic B" }
+    },
+    {
+      "id": "iron-sight",
+      "slot": "sight",
+      "name": { "en": "Iron Sight" }
+    },
+    {
+      "id": "flash-hider",
+      "slot": "barrel",
+      "name": { "en": "Flash Hider" }
+    },
+    {
+      "id": "compensator",
+      "slot": "barrel",
+      "name": { "en": "Compensator" }
+    },
+    {
+      "id": "muzzle-brake",
+      "slot": "barrel",
+      "name": { "en": "Muzzle Brake" }
+    },
+    {
+      "id": "suppressor",
+      "slot": "barrel",
+      "name": { "en": "Suppressor" }
+    },
+    {
+      "id": "extended-barrel",
+      "slot": "barrel",
+      "name": { "en": "Extended Barrel" }
+    },
+    {
+      "id": "vertical-grip",
+      "slot": "grip",
+      "name": { "en": "Vertical Grip" }
+    },
+    {
+      "id": "angled-grip",
+      "slot": "grip",
+      "name": { "en": "Angled Grip" }
+    },
+    {
+      "id": "horizontal-grip",
+      "slot": "grip",
+      "name": { "en": "Horizontal Grip" }
+    },
+    {
+      "id": "laser",
+      "slot": "underbarrel",
+      "name": { "en": "Laser" }
+    }
+  ]
+}

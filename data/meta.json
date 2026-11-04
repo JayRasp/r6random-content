@@ -1,0 +1,11 @@
+{
+  "$schema": "../schema/meta.schema.json",
+  "label": "Y11S1.0",
+  "minApp": 30,
+  "note": {
+    "en": "Operators, weapons and gadgets as of Y11S1. From now on, new operators and loadout fixes arrive without an app update.",
+    "de": "Operatoren, Waffen und Gadgets mit dem Stand von Y11S1. Neue Operatoren und Loadout-Korrekturen kommen ab jetzt ohne App-Update.",
+    "fr": "Opérateurs, armes et gadgets à jour pour Y11S1. Les nouveaux opérateurs et les corrections d'équipement arrivent désormais sans mise à jour de l'application.",
+    "lb": "Operatoren, Waffen a Geräter mam Stand Y11S1. Nei Operatoren a Korrekture vun der Ausrüstung kommen elo ouni Aktualiséierung vun der App."
+  }
+}

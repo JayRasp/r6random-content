@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "nomad",
+  "name": "Nomad",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y3S4",
+  "ability": {
+    "id": "airjab-launcher",
+    "name": { "en": "Airjab Launcher" }
+  },
+  "loadout": {
+    "primary": ["ak-74m", "arx200"],
+    "secondary": ["44-mag-semi-auto", "prb92"],
+    "gadgets": ["stun-grenade", "breach-charge"]
+  },
+  "legacyId": "a22"
+}

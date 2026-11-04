@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "iana",
+  "name": "Iana",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "intel"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y5S1",
+  "ability": {
+    "id": "gemini-replicator",
+    "name": { "en": "Gemini Replicator" }
+  },
+  "loadout": {
+    "primary": ["arx200", "g36c"],
+    "secondary": ["mk1-9mm", "gonne-6"],
+    "gadgets": ["impact-emp-grenade", "smoke-grenade"]
+  },
+  "legacyId": "a27"
+}

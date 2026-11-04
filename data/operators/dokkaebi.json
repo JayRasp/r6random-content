@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "dokkaebi",
+  "name": "Dokkaebi",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y2S4",
+  "ability": {
+    "id": "logic-bomb",
+    "name": { "en": "Logic Bomb (Ballistic Armor Military Laptop)" }
+  },
+  "loadout": {
+    "primary": ["mk-14-ebr", "bosg-12-2"],
+    "secondary": ["smg-12", "gonne-6", "c75-auto"],
+    "gadgets": ["smoke-grenade", "stun-grenade", "impact-emp-grenade"]
+  },
+  "legacyId": "a18"
+}

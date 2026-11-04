@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "hibana",
+  "name": "Hibana",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["breach", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S4",
+  "ability": {
+    "id": "x-kairos",
+    "name": { "en": "X-KAIROS (40mm Caliber Launcher)" }
+  },
+  "loadout": {
+    "primary": ["type-89", "supernova", "pmr90a2"],
+    "secondary": ["p229", "bearing-9"],
+    "gadgets": ["claymore", "stun-grenade", "breach-charge"]
+  },
+  "legacyId": "a14"
+}

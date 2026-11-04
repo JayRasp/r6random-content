@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "m4",
+  "name": "M4",
+  "slot": "primary",
+  "class": "assault-rifle"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "tachanka",
+  "name": "Tachanka",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "crowd-control"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "shumikha-launcher",
+    "name": { "en": "Shumikha Launcher" }
+  },
+  "loadout": {
+    "primary": ["dp27", "9x19vsn"],
+    "secondary": ["pmm", "gsh-18", "bearing-9"],
+    "gadgets": ["barbed-wire", "proximity-alarm", "deployable-shield"]
+  },
+  "legacyId": "d8"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "bandit",
+  "name": "Bandit",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "anti-gadget"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S0",
+  "ability": {
+    "id": "ced-1",
+    "name": { "en": "CED-1 (Crude Electrical Device)" }
+  },
+  "loadout": {
+    "primary": ["mp7", "m870"],
+    "secondary": ["p12", "keratos-357"],
+    "gadgets": ["barbed-wire", "nitro-cell"]
+  },
+  "legacyId": "d10"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "blitz",
+  "name": "Blitz",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "g52-tactical-shield",
+    "name": { "en": "G52-Tactical Shield" }
+  },
+  "loadout": {
+    "primary": ["g52-tactical-shield"],
+    "secondary": ["p12"],
+    "gadgets": ["smoke-grenade", "breach-charge"]
+  },
+  "legacyId": "a9"
+}

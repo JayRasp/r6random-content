@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "deimos",
+  "name": "Deimos",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y9S1",
+  "ability": {
+    "id": "deathmark-tracker",
+    "name": { "en": "DEATHMARK TRACKER" }
+  },
+  "loadout": {
+    "primary": ["ak-74m", "m590a1"],
+    "secondary": ["44-vendetta"],
+    "gadgets": ["hard-breach-charge", "frag-grenade"]
+  },
+  "legacyId": "a36"
+}

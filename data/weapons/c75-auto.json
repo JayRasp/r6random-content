@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "c75-auto",
+  "name": "C75 Auto",
+  "slot": "secondary",
+  "class": "machine-pistol",
+  "attachments": {
+    "sight": {
+      "replace": []
+    }
+  }
+}

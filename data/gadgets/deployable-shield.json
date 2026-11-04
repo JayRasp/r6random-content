@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "deployable-shield",
+  "name": { "en": "Deployable Shield" },
+  "side": "defense"
+}

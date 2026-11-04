@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "vector-45-acp",
+  "name": "Vector .45 ACP",
+  "slot": "primary",
+  "class": "smg"
+}

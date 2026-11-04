@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "thatcher",
+  "name": "Thatcher",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "support"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "e-g-s-disruptor",
+    "name": { "en": "E.G.S. Disruptor (Electronic Gear Scanner Disruptor)" }
+  },
+  "loadout": {
+    "primary": ["ar33", "l85a2", "m590a1", "pmr90a2"],
+    "secondary": ["p226-mk-25"],
+    "gadgets": ["breach-charge", "claymore"]
+  },
+  "legacyId": "a2"
+}

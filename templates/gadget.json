@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "__ID__",
+  "name": { "en": "__NAME__" },
+  "side": "attack or defense"
+}

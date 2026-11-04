@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "camrs",
+  "name": "CAMRS",
+  "slot": "primary",
+  "class": "marksman-rifle"
+}

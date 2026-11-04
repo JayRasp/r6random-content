@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "mp5sd",
+  "name": "MP5SD",
+  "slot": "primary",
+  "class": "smg",
+  "attachments": {
+    "sight": {
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    },
+    "barrel": {
+      "replace": []
+    }
+  }
+}

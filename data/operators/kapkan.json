@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "kapkan",
+  "name": "Kapkan",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S0",
+  "ability": {
+    "id": "edd-mk-ii-entry-denial-device",
+    "name": { "en": "EDD MK II Entry Denial Device" }
+  },
+  "loadout": {
+    "primary": ["9x19vsn", "sasg-12"],
+    "secondary": ["pmm", "gsh-18"],
+    "gadgets": ["bulletproof-camera", "barbed-wire"]
+  },
+  "legacyId": "d7"
+}

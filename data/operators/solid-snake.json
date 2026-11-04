@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "solid-snake",
+  "name": "Solid Snake",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "front-line"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y11S1",
+  "ability": {
+    "id": "soliton-radar-mk-iii",
+    "name": { "en": "SOLITON RADAR MK III" }
+  },
+  "loadout": {
+    "primary": ["f2", "pmr90a2"],
+    "secondary": ["tacit-45"],
+    "gadgets": ["frag-grenade", "stun-grenade", "impact-emp-grenade"]
+  },
+  "legacyId": "a38"
+}

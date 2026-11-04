@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "bulletproof-camera",
+  "name": { "en": "Bulletproof Camera" },
+  "side": "defense"
+}

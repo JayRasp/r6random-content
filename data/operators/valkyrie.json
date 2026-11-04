@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "valkyrie",
+  "name": "Valkyrie",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S2",
+  "ability": {
+    "id": "gyro-cam-mk2",
+    "name": { "en": "Gyro Cam MK2" }
+  },
+  "loadout": {
+    "primary": ["mpx", "spas-12"],
+    "secondary": ["d-50"],
+    "gadgets": ["impact-grenade", "nitro-cell"]
+  },
+  "legacyId": "d12"
+}

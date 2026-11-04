@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "pmr90a2",
+  "name": "PMR90A2",
+  "slot": "primary",
+  "class": "marksman-rifle"
+}

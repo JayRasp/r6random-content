@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "rauora",
+  "name": "Rauora",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["support", "map-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y10S1",
+  "ability": {
+    "id": "d-o-m-panel-launcher",
+    "name": { "en": "D.O.M. Panel Launcher" }
+  },
+  "loadout": {
+    "primary": ["417", "m249"],
+    "secondary": ["gsh-18", "reaper-mk2"],
+    "gadgets": ["breach-charge", "smoke-grenade"]
+  },
+  "legacyId": "a37"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "dp27",
+  "name": "DP27",
+  "slot": "primary",
+  "class": "lmg",
+  "attachments": {
+    "sight": {
+      "add": ["reflex-d"],
+      "remove": ["magnified-a", "magnified-b", "magnified-c"]
+    }
+  }
+}

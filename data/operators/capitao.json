@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "capitao",
+  "name": "Capitao",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["front-line", "map-control"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S3",
+  "ability": {
+    "id": "tac-mk0-tactical-crossbow",
+    "name": { "en": "TAC MK0 Tactical Crossbow" }
+  },
+  "loadout": {
+    "primary": ["para-308", "m249", "pmr90a2"],
+    "secondary": ["prb92", "gonne-6"],
+    "gadgets": ["claymore", "impact-emp-grenade", "hard-breach-charge"]
+  },
+  "legacyId": "a13"
+}

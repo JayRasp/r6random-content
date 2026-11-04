@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Messages",
+  "description": "data/messages.json: messages shown to players. They travel in the manifest, so a change needs a new release (a patch version is enough). Expired messages can stay; the app ignores them after \"until\".",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "messages": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/message" }
+    }
+  },
+  "required": ["messages"],
+  "additionalProperties": false
+}

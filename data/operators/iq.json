@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "iq",
+  "name": "IQ",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S0",
+  "ability": {
+    "id": "red-mkiii-spectre-electronics-detector",
+    "name": { "en": "Red MKIII \"Spectre\" Electronics Detector" }
+  },
+  "loadout": {
+    "primary": ["aug-a2", "552-commando", "g8a1"],
+    "secondary": ["p12"],
+    "gadgets": ["breach-charge", "frag-grenade", "claymore"]
+  },
+  "legacyId": "a10"
+}

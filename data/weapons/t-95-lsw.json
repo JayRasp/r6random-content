@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "t-95-lsw",
+  "name": "T-95 LSW",
+  "slot": "primary",
+  "class": "lmg"
+}

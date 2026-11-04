@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "kaid",
+  "name": "Kaid",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "anti-gadget"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y3S4",
+  "ability": {
+    "id": "rtila-electroclaw",
+    "name": { "en": "\"Rtila\" Electroclaw" }
+  },
+  "loadout": {
+    "primary": ["aug-a3", "tcsg12"],
+    "secondary": ["44-mag-semi-auto", "lfp586"],
+    "gadgets": ["nitro-cell", "observation-blocker", "barbed-wire"]
+  },
+  "legacyId": "d22"
+}

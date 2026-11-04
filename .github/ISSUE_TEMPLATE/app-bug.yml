@@ -1,0 +1,48 @@
+name: App problem
+description: The app crashes, shows something wrong or does not behave as expected.
+title: "App: "
+labels: ["app", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues on GitHub are public. Do not post personal information.
+        For something private, write to contact@jojaweb.lu instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Settings
+        2. Tap "Check now"
+        3. …
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version (optional)
+      description: Only if you want to share it; it helps with display problems.
+      placeholder: Pixel 8, Android 16
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Filled in automatically when you report from the app (Settings → Report a problem).
+      placeholder: 2.0.0 (30)
+    validations:
+      required: true
+  - type: input
+    id: content-version
+    attributes:
+      label: Content version
+      description: Filled in automatically when you report from the app.
+      placeholder: 2026.09.0 (Y11S3.0)

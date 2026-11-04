@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "stun-grenade",
+  "name": { "en": "Stun Grenade" },
+  "side": "attack"
+}

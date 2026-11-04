@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "mozzie",
+  "name": "Mozzie",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-gadget", "intel"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y4S1",
+  "ability": {
+    "id": "pest-launcher",
+    "name": { "en": "Pest Launcher" }
+  },
+  "loadout": {
+    "primary": ["commando-9", "p10-roni"],
+    "secondary": ["sdp-9mm", "super-shorty"],
+    "gadgets": ["barbed-wire", "nitro-cell", "impact-grenade"]
+  },
+  "legacyId": "d23"
+}

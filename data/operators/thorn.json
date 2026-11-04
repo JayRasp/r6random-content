@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "thorn",
+  "name": "Thorn",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y6S4",
+  "ability": {
+    "id": "razorbloom-shell",
+    "name": { "en": "Razorbloom Shell" }
+  },
+  "loadout": {
+    "primary": ["uzk50gi", "m870"],
+    "secondary": ["1911-tacops", "c75-auto"],
+    "gadgets": ["deployable-shield", "barbed-wire"]
+  },
+  "legacyId": "d31"
+}

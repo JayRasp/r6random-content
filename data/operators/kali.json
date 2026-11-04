@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "kali",
+  "name": "Kali",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "support"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y4S4",
+  "ability": {
+    "id": "lv-explosive-lance",
+    "name": { "en": "LV Explosive Lance" }
+  },
+  "loadout": {
+    "primary": ["csrx-300"],
+    "secondary": ["spsmg9", "c75-auto", "p226-mk-25"],
+    "gadgets": ["claymore", "smoke-grenade", "breach-charge"]
+  },
+  "legacyId": "a26"
+}

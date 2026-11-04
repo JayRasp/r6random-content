@@ -1,0 +1,63 @@
+name: Missing operator, weapon or gadget
+description: Something from the current season is not in the app yet.
+title: "Missing: "
+labels: ["missing-content", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New operators are usually released on season day, or within a few days of launch.
+        Please check the open issues first, in case someone already reported it.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is missing
+      options:
+        - Operator
+        - Weapon
+        - Gadget
+        - Attachment
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Noor
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Side, loadout, season, or anything else you know.
+      placeholder: |
+        Defender from Operation Split Fire (Y11S3).
+        Primary: Commando 9, ALDA 5.56. Secondary: 1911 TACOPS, Bailiff 410.
+        Gadgets: Deployable Shield, Barbed Wire.
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the Ubisoft page, patch notes or another reliable source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing
+      options:
+        - label: I would like to add it myself with a pull request.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Filled in automatically when you report from the app (Settings → Report a problem).
+      placeholder: 2.0.0 (30)
+  - type: input
+    id: content-version
+    attributes:
+      label: Content version
+      description: Filled in automatically when you report from the app.
+      placeholder: 2026.09.0 (Y11S3.0)

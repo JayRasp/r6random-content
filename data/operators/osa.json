@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "osa",
+  "name": "Osa",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["support", "intel"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y6S3",
+  "ability": {
+    "id": "talon-8-clear-shield",
+    "name": { "en": "Talon-8 Clear Shield" }
+  },
+  "loadout": {
+    "primary": ["556xi", "pdw9"],
+    "secondary": ["pmm"],
+    "gadgets": ["frag-grenade", "claymore", "impact-emp-grenade"]
+  },
+  "legacyId": "a31"
+}

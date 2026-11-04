@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "__ID__",
+  "name": "__NAME__",
+  "side": "attack or defense",
+  "type": "standard",
+  "roles": [],
+  "armor": 2,
+  "speed": 2,
+  "released": "__SEASON__",
+  "ability": {
+    "id": "__ID__-ability",
+    "name": { "en": "Ability name as shown in the game" }
+  },
+  "loadout": {
+    "primary": [],
+    "secondary": [],
+    "gadgets": []
+  }
+}

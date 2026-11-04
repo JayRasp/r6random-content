@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/weapon.schema.json",
+  "id": "six12-sd",
+  "name": "SIX12 SD",
+  "slot": "primary",
+  "class": "shotgun",
+  "attachments": {
+    "barrel": {
+      "replace": []
+    }
+  }
+}

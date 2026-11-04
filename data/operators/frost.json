@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "frost",
+  "name": "Frost",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "trapper"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S1",
+  "ability": {
+    "id": "sterling-mk2-lht",
+    "name": { "en": "Sterling MK2 LHT (Welcome Mat)" }
+  },
+  "loadout": {
+    "primary": ["super-90", "9mm-c1"],
+    "secondary": ["mk1-9mm", "ita12s"],
+    "gadgets": ["bulletproof-camera", "deployable-shield"]
+  },
+  "legacyId": "d11"
+}

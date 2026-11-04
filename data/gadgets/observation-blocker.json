@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "observation-blocker",
+  "name": { "en": "Observation Blocker" },
+  "side": "defense"
+}

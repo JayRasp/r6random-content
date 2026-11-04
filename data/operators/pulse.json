@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "pulse",
+  "name": "Pulse",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "support"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y1S0",
+  "ability": {
+    "id": "hb-5-cardiac-sensor",
+    "name": { "en": "HB-5 Cardiac Sensor" }
+  },
+  "loadout": {
+    "primary": ["ump45", "m1014"],
+    "secondary": ["m45-meusoc", "5-7-usg", "reaper-mk2"],
+    "gadgets": ["observation-blocker", "deployable-shield", "nitro-cell"]
+  },
+  "legacyId": "d4"
+}

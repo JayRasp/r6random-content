@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "clash",
+  "name": "Clash",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "crowd-control"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y3S3",
+  "ability": {
+    "id": "cce-shield",
+    "name": { "en": "CCE Shield" }
+  },
+  "loadout": {
+    "primary": ["cce-shield"],
+    "secondary": ["super-shorty", "spsmg9", "p-10c"],
+    "gadgets": ["impact-grenade", "barbed-wire"]
+  },
+  "legacyId": "d21"
+}

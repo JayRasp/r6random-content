@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "aruni",
+  "name": "Aruni",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-entry", "anti-gadget"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y5S4",
+  "ability": {
+    "id": "surya-gate-prosthetic-arm",
+    "name": { "en": "Surya Gate & Prosthetic Arm" }
+  },
+  "loadout": {
+    "primary": ["p10-roni", "mk-14-ebr"],
+    "secondary": ["prb92"],
+    "gadgets": ["barbed-wire", "bulletproof-camera"]
+  },
+  "legacyId": "d29"
+}

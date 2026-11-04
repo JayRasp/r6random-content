@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "echo",
+  "name": "Echo",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["intel", "crowd-control"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y1S4",
+  "ability": {
+    "id": "yokai",
+    "name": { "en": "YOKAI (Unmanned hovering vehicle)" }
+  },
+  "loadout": {
+    "primary": ["supernova", "mp5sd"],
+    "secondary": ["p229", "bearing-9"],
+    "gadgets": ["impact-grenade", "deployable-shield"]
+  },
+  "legacyId": "d14"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "doc",
+  "name": "Doc",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["support"],
+  "armor": 3,
+  "speed": 1,
+  "released": "Y1S0",
+  "ability": {
+    "id": "mpd-0-stim-pistol",
+    "name": { "en": "MPD-0 Stim Pistol" }
+  },
+  "loadout": {
+    "primary": ["sg-cqb", "mp5", "p90"],
+    "secondary": ["p9", "lfp586", "bailiff-410"],
+    "gadgets": ["bulletproof-camera", "barbed-wire"]
+  },
+  "legacyId": "d5"
+}

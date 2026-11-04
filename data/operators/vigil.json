@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "vigil",
+  "name": "Vigil",
+  "side": "defense",
+  "type": "standard",
+  "roles": ["anti-gadget", "crowd-control"],
+  "armor": 1,
+  "speed": 3,
+  "released": "Y2S4",
+  "ability": {
+    "id": "erc-7",
+    "name": { "en": "ERC-7 (Electronic Rendering Cloak)" }
+  },
+  "loadout": {
+    "primary": ["k1a", "bosg-12-2"],
+    "secondary": ["c75-auto", "smg-12"],
+    "gadgets": ["impact-grenade", "bulletproof-camera"]
+  },
+  "legacyId": "d18"
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "../../schema/gadget.schema.json",
+  "id": "nitro-cell",
+  "name": { "en": "Nitro Cell" },
+  "side": "defense"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/operator.schema.json",
+  "id": "flores",
+  "name": "Flores",
+  "side": "attack",
+  "type": "standard",
+  "roles": ["anti-gadget", "intel"],
+  "armor": 2,
+  "speed": 2,
+  "released": "Y6S1",
+  "ability": {
+    "id": "rce-ratero-charge",
+    "name": { "en": "RCE-Ratero Charge" }
+  },
+  "loadout": {
+    "primary": ["ar33", "sr-25", "t-95-lsw"],
+    "secondary": ["gsh-18"],
+    "gadgets": ["stun-grenade", "claymore"]
+  },
+  "legacyId": "a30"
+}
